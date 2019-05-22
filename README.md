@@ -29,7 +29,7 @@ Visulaization:
 
 As a first step we compared different rows of the table to identify matching patterns of IPC codes between different technologies. An example of Radar, Lidar technologies is shown in the figure below 
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/sandeepinampudi/Capstone/blob/master/Picture1.jpg)
 
 An unsupervised model for a sequence of clustering and classication
 
