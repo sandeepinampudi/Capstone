@@ -1,6 +1,5 @@
-# Capstone
-
-Evolution tree of technolgies : A sponsored project from LUX Research
+# Capstone Project: Evolution tree of technolgies 
+Sponsored by LUX Research
 
 
 Objective:
@@ -31,9 +30,27 @@ As a first step we compared different rows of the table to identify matching pat
 
 ![alt text](https://github.com/sandeepinampudi/Capstone/blob/master/Picture1.jpg)
 
-An unsupervised model for a sequence of clustering and classication
+An unsupervised model for a sequence of clustering and classication:
 
-An example output branch from the algorithm for a small list of technologies, matched to the intuition of the experts
+An in-house developed unsupervised method with a combination of clustering and classication schemes is used to build the evolution tree. 
+
+The algorithm is based on the following hypothesis:
+
+Three types of relationships are possible between any pair of technolgies 
+
+i) Not connected, 
+When the pattern match factor between the technologies is below the threshold
+
+ii) Parent-Child,  
+When the pattern match factor between the technologies is higher than a threshold. The technolgy with larger number of total patents will act as the parent and the other acts as child 
+
+iii) Simply Connected,
+
+When the pattern match factor between the technologies is higher than a threshold, but both the technolgies have roughly equal number of total patenets. 
+
+
+
+An example output branch from the algorithm for a small list of technologies, matched to the intuition of the experts is hsown below
 
 
 ![alt text](https://github.com/sandeepinampudi/Capstone/blob/master/Picture2.jpg)
