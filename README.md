@@ -33,7 +33,10 @@ As a first step we compared different rows of the table to identify matching pat
 
 An unsupervised model for a sequence of clustering and classication
 
+An example output branch from the algorithm for a small list of technologies, matched to the intuition of the experts
 
+
+![alt text](https://github.com/sandeepinampudi/Capstone/blob/master/Picture2.jpg)
 
  
 
