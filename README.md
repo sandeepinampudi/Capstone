@@ -6,7 +6,7 @@ Objective:
 
 The goal of my capstone project is to build an evolution tree of growing technologgies around the world. This classifcation scheme allow users to easily recognise the possible fields connected to their field of interest.
 
-To build this tree, I chose International Patent Classification (IPC) codes that are recorded in each publsihed patent related to each technology as ingredients.
+To build this tree, we chose International Patent Classification (IPC) codes that are recorded in each publsihed patent related to each technology as ingredients.
 
 
 Data Acquisition:
@@ -18,7 +18,7 @@ The response pages of a serach keyword are collected using requests library and 
 
 IPC codes are strings with 4 characters of the form 'A01B', that represent the significant fundamental scietific components/aspects used in the invention disclosed in the patent. Each patent may contain between 3 to 10 IPC codes.
 
-Utilizing the IPC code data, we assigned a weigtage of each IPC code to each technology by calculating the ratio of number of times an IPC code appears with respect to the total number of patents of a technology.
+Utilizing the IPC code data, we assigned a weigtage for each IPC code to each technology by calculating the ratio of number of times an IPC code appears with respect to the total number of patents of a technology.
 
 The weighting factors are tabulated such as each row represet a new technology and each column represent the IPC codes. 
 
@@ -29,6 +29,10 @@ Visulaization:
 As a first step we compared different rows of the table to identify matching patterns of IPC codes between different technologies. An example of Radar, Lidar technologies is shown in the figure below 
 
 ![alt text](https://github.com/sandeepinampudi/Capstone/blob/master/Picture1.jpg)
+
+
+Inspi
+
 
 An unsupervised model for a sequence of clustering and classication:
 
@@ -49,6 +53,16 @@ iii) Simply Connected,
 When the pattern match factor between the technologies is higher than a threshold, but both the technolgies have roughly equal number of total patenets. 
 
 
+Algorithm implementation:
+
+During the implementation, the algorithm could be highly simplified by sorting the technolgies in the descending order of total number of patensts. 
+
+Start with the first in the list by assigning it a parent status. 
+Compute the pattern match factor of the second with the first to identify the second either as a child to the first, simply-connected, or not connected. If not connected, then assign a parent status to the second so that it can start its own branch.
+
+
+Follow the same process for the i^th technology by identifying its relation with every parent technology before i^th step. 
+
 
 An example output branch from the algorithm for a small list of technologies, matched to the intuition of the experts is hsown below
 
@@ -56,6 +70,7 @@ An example output branch from the algorithm for a small list of technologies, ma
 ![alt text](https://github.com/sandeepinampudi/Capstone/blob/master/Picture2.jpg)
 
  
+
 
 
   
