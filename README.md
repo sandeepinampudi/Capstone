@@ -71,7 +71,7 @@ An example output branch from the algorithm for a small list of technologies, ma
 ![alt text](https://github.com/sandeepinampudi/Capstone/blob/master/Picture2.jpg)
 
  
-
+The algorithm outputs a dictionary (dictionay (dictionary(......))) that represent the tree structure 
 
 
   
